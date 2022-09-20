@@ -1,5 +1,5 @@
 import Foundation
-struct History: Identifiable {
+struct History: Identifiable, Codable {
     let id: UUID
     let date: Date
     var attendess: [DailyScrum.Attendee]
