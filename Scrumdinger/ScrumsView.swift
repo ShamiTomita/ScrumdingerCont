@@ -6,7 +6,7 @@ import SwiftUI
 
 struct ScrumsView: View {
     @Binding var scrums: [DailyScrum]
-    
+    @State private var isPResentingNewScrumView = false
     var body: some View {
         List {
             ForEach($scrums) { $scrum in
